@@ -1,0 +1,44 @@
+@API_HostAddress = https://localhost:7116
+
+### Get all users
+GET {{API_HostAddress}}/api/users/
+Accept: application/json
+
+###
+
+### Get a user by ID (replace with actual GUID)
+GET {{API_HostAddress}}/api/users/c4339470-729f-48f9-9891-0ed6717424b0
+Accept: application/json
+
+###
+
+### Create a new user
+POST {{API_HostAddress}}/api/users/
+Content-Type: application/json
+
+{
+  "email": "johndoe@example.com",
+  "username": "johndoe123",
+  "firstName": "John",
+  "lastName": "Doe",
+  "dateOfBirth": "1995-06-15",
+  "contact": "+1234567890",
+  "gender": 1
+}
+
+###
+
+### Update an existing user (replace with actual GUID)
+PUT {{API_HostAddress}}/api/users/c4339470-729f-48f9-9891-0ed6717424b0
+Content-Type: application/json
+
+{
+  "id": "c4339470-729f-48f9-9891-0ed6717424b0",
+  "email": "john.updated@example.com",
+  "username": "johndoe123",
+  "firstName": "John",
+  "lastName": "Updated",
+  "dateOfBirth": "1995-06-15",
+  "contact": "+1987654321",
+  "gender": 1
+}

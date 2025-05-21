@@ -2,8 +2,6 @@
 
 This repository demonstrates a Clean Architecture implementation using .NET 8, MongoDB, and Entity Framework Core. It provides a structured, maintainable, and testable foundation for building enterprise-level applications.
 
-![Clean Architecture Diagram](https://raw.githubusercontent.com/jasontaylordev/CleanArchitecture/main/.github/clean-architecture.png)
-
 ## Project Structure
 
 The solution follows the principles of Clean Architecture with clear separation of concerns:
